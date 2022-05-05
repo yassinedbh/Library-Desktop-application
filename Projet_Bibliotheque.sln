@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet_Bibliotheque", "Projet_Bibliotheque\Projet_Bibliotheque.csproj", "{6E26BDB0-5E8D-4C55-8CE5-A002B41F6A10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "image", "image", "{60495BAC-D74D-4613-92C3-040D9C41847F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\4004113.png = ..\..\..\..\Downloads\4004113.png
+		..\..\..\..\Downloads\47-479954_tube-livre-png-icono-de-libros-png-clipart.png = ..\..\..\..\Downloads\47-479954_tube-livre-png-icono-de-libros-png-clipart.png
+		..\..\..\..\Downloads\istockphoto-866533418-1024x1024 (1).jpg = ..\..\..\..\Downloads\istockphoto-866533418-1024x1024 (1).jpg
+		..\..\..\..\Downloads\téléchargement (10).png = ..\..\..\..\Downloads\téléchargement (10).png
+		..\..\..\..\Downloads\téléchargement (2).jfif = ..\..\..\..\Downloads\téléchargement (2).jfif
+		..\..\..\..\Downloads\téléchargement (7).png = ..\..\..\..\Downloads\téléchargement (7).png
+		..\..\..\..\Downloads\téléchargement (8).png = ..\..\..\..\Downloads\téléchargement (8).png
+		..\..\..\..\Downloads\téléchargement (9).png = ..\..\..\..\Downloads\téléchargement (9).png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E26BDB0-5E8D-4C55-8CE5-A002B41F6A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E26BDB0-5E8D-4C55-8CE5-A002B41F6A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E26BDB0-5E8D-4C55-8CE5-A002B41F6A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E26BDB0-5E8D-4C55-8CE5-A002B41F6A10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6397546-5D29-47C0-B214-5C54051664CA}
+	EndGlobalSection
+EndGlobal

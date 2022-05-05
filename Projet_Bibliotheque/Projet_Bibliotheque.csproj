@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E26BDB0-5E8D-4C55-8CE5-A002B41F6A10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projet_Bibliotheque</RootNamespace>
+    <AssemblyName>Projet_Bibliotheque</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\mysql-connector-net-8.0.27-noinstall\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFramework">
+      <HintPath>..\..\mysql-connector-net-8.0.27-noinstall\v4.5.2\MySql.Data.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>..\..\mysql-connector-net-8.0.27-noinstall\v4.5.2\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cdform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cdform.Designer.cs">
+      <DependentUpon>Cdform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cds.cs" />
+    <Compile Include="Changermdp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Changermdp.Designer.cs">
+      <DependentUpon>Changermdp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empruntform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empruntform.Designer.cs">
+      <DependentUpon>Empruntform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpruntRetard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpruntRetard.Designer.cs">
+      <DependentUpon>EmpruntRetard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listestouteemprunts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listestouteemprunts.Designer.cs">
+      <DependentUpon>Listestouteemprunts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RendreOuvrage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RendreOuvrage.Designer.cs">
+      <DependentUpon>RendreOuvrage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistique.Designer.cs">
+      <DependentUpon>Statistique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Livre.cs" />
+    <Compile Include="Livreform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Livreform.Designer.cs">
+      <DependentUpon>Livreform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motdepasseform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motdepasseform.Designer.cs">
+      <DependentUpon>Motdepasseform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ouvrage.cs" />
+    <Compile Include="Periodiciteform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Periodiciteform.Designer.cs">
+      <DependentUpon>Periodiciteform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Periodiques.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testdashboard.Designer.cs">
+      <DependentUpon>testdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilisateurform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilisateurform.Designer.cs">
+      <DependentUpon>Utilisateurform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cdform.resx">
+      <DependentUpon>Cdform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Changermdp.resx">
+      <DependentUpon>Changermdp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empruntform.resx">
+      <DependentUpon>Empruntform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpruntRetard.resx">
+      <DependentUpon>EmpruntRetard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listestouteemprunts.resx">
+      <DependentUpon>Listestouteemprunts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RendreOuvrage.resx">
+      <DependentUpon>RendreOuvrage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistique.resx">
+      <DependentUpon>Statistique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Livreform.resx">
+      <DependentUpon>Livreform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motdepasseform.resx">
+      <DependentUpon>Motdepasseform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Periodiciteform.resx">
+      <DependentUpon>Periodiciteform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="testdashboard.resx">
+      <DependentUpon>testdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilisateurform.resx">
+      <DependentUpon>Utilisateurform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-866533418-1024x1024 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\47-479954_tube-livre-png-icono-de-libros-png-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-settings-male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maison.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accueil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_vdr_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\se-deconnecter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-déconnexion-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-déconnexion-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-déconnexion-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-déconnexion-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-déconnexion-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart-diagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-déconnexion-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exporter-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exporter-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-xbox-x-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1001503340.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
